@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "45731309674",
+    "project_id": "cinestream-c46e3",
+    "storage_bucket": "cinestream-c46e3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45731309674:android:4f30448144187f83e78213",
+        "android_client_info": {
+          "package_name": "com.cinestream"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3-wrgGBHylN8H5ntped12-nfg6F9uFxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

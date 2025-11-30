@@ -1,0 +1,84 @@
+package com.cinestream.network
+
+import com.cinestream.data.CategoryMoviesResponse
+import com.cinestream.data.CreditsResponse
+import com.cinestream.data.MovieDetailsResponse
+import com.cinestream.data.MovieResponse
+import com.cinestream.data.MovieSearchResponse
+import com.cinestream.data.VideoResponse
+import retrofit2.http.GET
+import retrofit2.http.Path
+import retrofit2.http.Query
+
+interface MovieApiService {
+
+    //  Get popular movies
+    @GET("movie/popular")
+    suspend fun getPopularMovies(
+        @Query("api_key") apiKey: String,
+        @Query("language") language: String = "en-US",
+        @Query("page") page: Int = 1
+    ): MovieResponse
+
+    // Get trending movies (weekly)
+    @GET("trending/movie/week")
+    suspend fun getTrendingMovies(
+        @Query("api_key") apiKey: String
+    ): MovieResponse
+
+    // Get movie details by ID
+    @GET("movie/{movie_id}")
+    suspend fun getMovieDetails(
+        @Path("movie_id") movieId: Int,
+        @Query("api_key") apiKey: String,
+        @Query("language") language: String = "en-US"
+    ): MovieDetailsResponse
+
+    @GET("search/movie")
+    suspend fun searchMovies(
+        @Query("api_key") apiKey: String,
+        @Query("query") query: String,
+        @Query("page") page: Int = 1
+    ): MovieSearchResponse
+    @GET("discover/movie")
+    suspend fun discoverByGenre(
+        @Query("api_key") apiKey: String,
+        @Query("with_genres") genreId: Int,
+        @Query("page") page: Int = 1
+    ): CategoryMoviesResponse
+
+    // Get Upcoming movies
+    @GET("movie/upcoming")
+    suspend fun getUpcomingMovies(
+        @Query("api_key") apiKey: String,
+        @Query("language") language: String = "en-US",
+        @Query("page") page: Int = 1
+    ): MovieResponse
+
+    // Get top rated movies
+    @GET("movie/top_rated")
+    suspend fun getTopRatedMovies(
+        @Query("api_key") apiKey: String,
+        @Query("language") language: String = "en-US",
+        @Query("page") page: Int = 1
+    ): MovieResponse
+
+    // Get video Trailer movies
+    @GET("movie/{movie_id}/videos")
+    suspend fun getMovieVideos(
+        @Path("movie_id") movieId: Int,
+        @Query("api_key") apiKey: String,
+        @Query("language") language: String = "en-US"
+    ): VideoResponse
+
+    // Get Cast movies
+    @GET("movie/{movie_id}/credits")
+    suspend fun getMovieCredits(
+        @Path("movie_id") movieId: Int,
+        @Query("api_key") apiKey: String,
+        @Query("language") language: String = "en-US"
+    ): CreditsResponse
+}
+
+
+

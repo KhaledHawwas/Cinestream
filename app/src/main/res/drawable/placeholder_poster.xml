@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="300dp"
+    android:viewportWidth="200"
+    android:viewportHeight="300">
+    <path
+        android:name="background"
+        android:fillColor="#0C1023"
+        android:pathData="M0,0h200v300h-200z" />
+    <path
+        android:name="gradientOverlay"
+        android:fillAlpha="0.45"
+        android:fillColor="#4D8266FF"
+        android:pathData="M0,0h200v300h-200z" />
+    <path
+        android:name="film"
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,60h120v180h-120z"
+        android:fillAlpha="0.05" />
+    <path
+        android:name="glyph"
+        android:fillColor="#FFFFFF"
+        android:pathData="M70,90h60v10h-60zM70,120h60v10h-60zM70,150h60v10h-60zM70,180h40v10h-40z"
+        android:fillAlpha="0.35" />
+    <path
+        android:name="reel"
+        android:fillColor="#3BF5C1"
+        android:pathData="M120,200a20,20 0 1,1 0.01,0"
+        android:fillAlpha="0.8" />
+    <path
+        android:name="spark"
+        android:strokeColor="#FFC78C"
+        android:strokeWidth="4"
+        android:pathData="M35,35l12,12M47,35l-12,12"
+        android:strokeAlpha="0.7" />
+</vector>
+
