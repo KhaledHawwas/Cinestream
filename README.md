@@ -6,12 +6,28 @@ Cinestream is a modern Android movie discovery app built with Kotlin and Jetpack
 
 ## ✨ Features
 
-- **Material 3 Design**: Custom color palettes (Aurora/CoralPulse), typography, and glassmorphism panels
-- **Modern UI**: Hero carousels, cinematic statistics, immersive details, and responsive search
-- **TMDB Integration**: Complete integration with The Movie Database API
-- **Firebase Ready**: Authentication and Firestore support for user profiles and settings
-- **Clean Architecture**: Well-organized package structure following Android best practices
+🎨 Advanced Design & Modern Interface
+Material Design 3 with custom color palettes (Aurora/CoralPulse)
+Glassmorphism Design transparent panels with stunning visual effects
+Hero Carousels showcasing latest and most popular movies
+Interactive cinematic statistics and immersive details
 
+🔗 Integrated Profiles & Cloud Storage
+Firebase Integration complete authentication and Firestore support
+User profiles linked with cloud synchronization
+Secure data storage for preferences and watch history
+
+🎬 Comprehensive Movie Experience
+TMDB Integration complete integration with The Movie Database API
+Movies available with detailed descriptions
+Trailer viewing capability directly within the app
+Advanced search with responsive results
+
+🌍 Multilingual & Accessibility
+Dual Language Support Arabic and English interfaces
+Customization Freedom choice of font type and size
+Theme Options night mode or day mode selection
+Favorites System add movies to personal favorites list
 ---
 
 ## 🛠️ Tech Stack
