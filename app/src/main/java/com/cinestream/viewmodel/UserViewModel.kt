@@ -2,6 +2,7 @@ package com.cinestream.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.cinestream.BuildConfig
 import com.cinestream.network.RetrofitInstance
 import com.cinestream.data.MovieDetailsResponse
 import com.cinestream.data.UserData
@@ -187,7 +188,7 @@ class UserViewModel : ViewModel() {
         return try {
                 RetrofitInstance.api.getMovieDetails(
                     movieId,
-                    "2745135cf88bf117b5ace2b3fbabf113"
+                    BuildConfig.TMDB_API_KEY
                 )
         } catch (e: Exception) {
             e.printStackTrace()

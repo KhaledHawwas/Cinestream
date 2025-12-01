@@ -2,6 +2,7 @@ package com.cinestream.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.cinestream.BuildConfig
 import com.cinestream.data.MovieDetailsResponse
 import com.cinestream.network.RetrofitInstance
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -12,7 +13,7 @@ import kotlinx.coroutines.launch
 class MovieDetailViewModel : ViewModel() {
 
     private val apiService = RetrofitInstance.api
-    private val apiKey = "2745135cf88bf117b5ace2b3fbabf113"
+    private val apiKey = BuildConfig.TMDB_API_KEY
 
     private val _trailerKey = MutableStateFlow<String?>(null)
 

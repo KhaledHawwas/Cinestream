@@ -66,7 +66,7 @@ class TrailerViewModelTest {
 
         viewModel.getMovieCast(101, "ar")
 
-        verify(mockApi).getMovieCredits(101, "2745135cf88bf117b5ace2b3fbabf113", "ar-SA")
+        verify(mockApi).getMovieCredits(101, BuildConfig.TMDB_API_KEY, "ar-SA")
     }
 
     @Test
